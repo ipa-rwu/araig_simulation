@@ -1,5 +1,5 @@
-# Test: Obstacle detection and avoidance
-## Installation:
+## Test: Obstacle detection and avoidance
+### Installation:
 ```
 cd my_catkin_ws
 wget https://raw.githubusercontent.com/ipa-rwu/araig_simulation/araig_simulation.rosinstall.melodic
@@ -11,19 +11,29 @@ catkin_make (or catkin build)
 
 source devel/setup.bash
 ```
-## steps: 
+### steps: 
 ```
 export ROBOT=raw3-3
 export ROBOT_ENV=mobile-robot-obstacle
 roslaunch araig_bringup_sim robot.launch
 ```
-### for static obstacle:
+#### for static obstacle:
 ```
 roslaunch araig_objects spawn_object_urdf.launch object:=static_obstacle
 ```
 
-### for moving obstacle:
+#### for moving obstacle:
 ```
 rostopic pub /world/floor_to_belt_joint_velocity_controller/command std_msgs/Float64 "data: 10.0"
 ("data" here means speed)
+```
+## Test:manipulation
+# upload targets for grasping 
+upload position of static objects
+```
+roslaunch cob_default_env_config upload_object_locations.launch
+```
+upload static objects in gazebo
+```
+rosrun araig_gazebo_tools spawn_object.py milk
 ```
