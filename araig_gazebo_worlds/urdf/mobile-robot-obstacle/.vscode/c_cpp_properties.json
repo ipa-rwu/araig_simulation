@@ -1,0 +1,37 @@
+{
+    "configurations": [
+        {
+            "browse": {
+                "databaseFilename": "",
+                "limitSymbolsToIncludedHeaders": true
+            },
+            "includePath": [
+                "/home/rachel/ARAIG/araig_ws/devel/include/**",
+                "/opt/ros/melodic/include/**",
+                "/home/rachel/ARAIG/araig_ws/src/cob_control/cob_base_controller_utils/include/**",
+                "/home/rachel/ARAIG/araig_ws/src/cob_control/cob_base_velocity_smoother/include/**",
+                "/home/rachel/ARAIG/araig_ws/src/cob_driver/cob_bms_driver/include/**",
+                "/home/rachel/ARAIG/araig_ws/src/cob_control/cob_cartesian_controller/include/**",
+                "/home/rachel/ARAIG/araig_ws/src/cob_control/cob_collision_velocity_filter/include/**",
+                "/home/rachel/ARAIG/araig_ws/src/cob_control/cob_footprint_observer/include/**",
+                "/home/rachel/ARAIG/araig_ws/src/cob_control/cob_frame_tracker/include/**",
+                "/home/rachel/ARAIG/araig_ws/src/cob_command_tools/cob_interactive_teleop/include/**",
+                "/home/rachel/ARAIG/araig_ws/src/cob_control/cob_mecanum_controller/include/**",
+                "/home/rachel/ARAIG/araig_ws/src/cob_control/cob_model_identifier/include/**",
+                "/home/rachel/ARAIG/araig_ws/src/cob_control/cob_obstacle_distance/include/**",
+                "/home/rachel/ARAIG/araig_ws/src/cob_control/cob_omni_drive_controller/include/**",
+                "/home/rachel/ARAIG/araig_ws/src/cob_driver/cob_scan_unifier/include/**",
+                "/home/rachel/ARAIG/araig_ws/src/cob_control/cob_tricycle_controller/include/**",
+                "/home/rachel/ARAIG/araig_ws/src/cob_control/cob_twist_controller/include/**",
+                "/home/rachel/ARAIG/araig_ws/src/cob_driver/laser_scan_densifier/include/**",
+                "/usr/include/**"
+            ],
+            "name": "ROS",
+            "intelliSenseMode": "gcc-x64",
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17"
+        }
+    ],
+    "version": 4
+}

@@ -1,0 +1,25 @@
+<package format="2">
+  <name>araig_bringup_sim</name>
+  <version>0.7.4</version>
+  <description>This package provides launch files for starting a simulated Care-O-bot.</description>
+
+  <license>Apache 2.0</license>
+
+  <url type="website">http://ros.org/wiki/cob_bringup_sim</url>
+  <!-- <url type="bugtracker"></url> -->
+
+  <maintainer email="rwu@ipa.fhg.de">Ruichao</maintainer>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <exec_depend>cob_default_env_config</exec_depend>
+  <exec_depend>cob_default_robot_config</exec_depend>
+  <exec_depend>cob_gazebo_worlds</exec_depend>
+  <exec_depend>cob_gazebo</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+
+  <test_depend>cob_default_env_config</test_depend>
+  <test_depend>cob_supported_robots</test_depend>
+  <test_depend>roslaunch</test_depend>
+
+</package>

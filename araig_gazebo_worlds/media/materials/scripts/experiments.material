@@ -1,0 +1,59 @@
+////////////////////////////////////////////////////////////////////////////////
+// experiments materials
+material experiments/woodfloor
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture woodfloor.jpg
+      }
+    }
+  }
+}
+
+material experiments/normalfloor
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture normalfloor.jpg
+      }
+    }
+  }
+}
+
+material experiments/aluminum
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture aluminium.jpg
+      }
+    }
+  }
+}
+
+
+material experiments/wall
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture wall.jpg
+      }
+    }
+  }
+}
+

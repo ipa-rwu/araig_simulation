@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+
+	<arg name="robot_env" default="test-break"/>
+	<arg name="publish_world_state" value="true"/>
+
+	<!-- spawn environment -->
+	<include file="$(find araig_gazebo_worlds)/launch/world_urdf.xml">
+		<arg name="robot_env" value="$(arg robot_env)"/>
+		<arg name="publish_world_state" value="$(arg publish_world_state)"/>
+	</include>
+
+	<!-- Load joint controller configurations from YAML file to parameter server -->
+	<rosparam ns="world" command="load" file="$(find araig_gazebo_worlds)/urdf/$(arg robot_env)/world_controller.yaml"/>
+	<node ns="world" name="floor_to_belt_controller_spawner" pkg="controller_manager" type="spawner" respawn="true" output="screen" args="floor_to_belt_joint_state_controller floor_to_belt_joint_velocity_controller"/>
+
+</launch>

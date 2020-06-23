@@ -1,0 +1,38 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+    <model name="floor">
+      <static>0</static>
+      <link name="link">
+        <inertial>
+          <pose>0 0 0 0 0 0</pose>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>1.651557</ixx>
+            <ixy>000000</ixy>
+            <ixz>0.000000</ixz>
+            <iyy>1.651557</iyy>
+            <iyz>0.000000</iyz>
+            <izz>1.651557</izz>
+          </inertia>
+        </inertial>
+        <collision name="collision">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+                <uri>model://floor/meshes/modular_floor.dae</uri>
+                <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name="visual">
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+                <uri>model://floor/meshes/modular_floor.dae</uri>
+                <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+      </link>
+    </model>
+</sdf>

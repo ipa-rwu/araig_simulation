@@ -1,0 +1,8 @@
+- git:
+    local-name: cob_environments
+    uri: https://github.com/ipa-rwu/cob_environments.git
+    version: araig-env
+- git:
+    local-name: araig_simulation
+    uri: https://github.com/ipa-rwu/araig_simulation.git
+    version: mobile_robot_obstacle 
